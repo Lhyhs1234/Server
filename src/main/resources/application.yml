@@ -1,0 +1,33 @@
+server.port: 9090
+swagger:
+  title: spring-boot-starter-swagger
+  description: Starter for swagger 2.x
+  version: 1.9.0.RELEASE
+  license: Apache License, Version 2.0
+  licenseUrl: https://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfServiceUrl: https://github.com/dyc87112/spring-boot-starter-swagger
+  contact:
+    name: didi
+    url: http://blog.didispace.com
+    email: dyc87112@qq.com
+  base-package: com.example
+  base-path: /**
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
+  application:
+    name:Server
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/server?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: Lhyhs123
+upload:
+  webpath:
+    "/upload/"
+  filepath:
+    "D:\\Program Files\\"
